@@ -1,0 +1,51 @@
+body{
+    background-color: #000;
+}
+
+nav{
+    background-color: #30A94A;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%; /* Define the grid columns */
+    grid-template-rows: 1fr; /* Ensure a single row */
+    height: 100vh; /* Make the grid fill the viewport height */
+    /* align-content: center; */
+    /* align-items: center; */
+}
+  
+.side-content {
+    /* background-color: aqua; */
+}
+  
+.center-content {
+    /* background-color:#343541; */
+    display: flex;
+    justify-content: center; 
+    color: "white";
+    
+
+#hannon{
+    margin-top: 100px;
+    position: relative
+}
+}
+.overlay {
+    position: absolute; /* Position the overlay relative to the center-content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(211,211,211, 1); /* Semi-transparent black background */
+    color: white; /* Optional: Set text color for better readability */
+    text-align: center; /* Optional: Center text within the overlay */
+  }
