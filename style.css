@@ -1,5 +1,5 @@
 body{
-    background-color: #000;
+    background-color: #132043;
 }
 
 nav{
@@ -16,8 +16,9 @@ nav{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%; /* Define the grid columns */
-    grid-template-rows: 1fr; /* Ensure a single row */
+    /* grid-template-columns: 15% 70% 15%; Define the grid columns */
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-rows: 1fr; Ensure a single row */
     height: 100vh; /* Make the grid fill the viewport height */
     /* align-content: center; */
     /* align-items: center; */
@@ -25,16 +26,22 @@ nav{
   
 .side-content {
     /* background-color: aqua; */
+    grid-column: 1;
 }
   
 .center-content {
     /* background-color:#343541; */
-    grid-column: auto;
+    /* grid-column: 2;
     background-color: #343541;
     display: flex;
     justify-content: center; 
-    color: "white";
-    
+    color: "white"; */
+    padding: 20px; /* Add padding for content */
+    display: grid; /* Make center panel single column */
+    grid-template-rows: auto; /* Allow items to stack vertically */
+    align-items: center; /* Align content vertically (optional) */
+    justify-items: center;
+    background-color: #2D3250;
 
 #hannon{
     margin-top: 100px;
