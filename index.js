@@ -6,6 +6,7 @@ navBod.style.color = 'white'
 let hannon = document.getElementById('hero#1')
 hannon.innerHTML = '<h1>Software Enginer</h1>'
 hannon.innerHTML = '<h1 style="font-size: 78px">?</h1>'
+hannon.innerHTML = '<h3>This person was one of the 7 founders of Silicon Graphics Incorporated</h3>'
 
 const innovators = [{firstName: 'Marc', 
                         lastName: 'Hannah',
