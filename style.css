@@ -42,12 +42,13 @@ nav{
     align-items: center; /* Align content vertically (optional) */
     justify-items: center;
     background-color: #2D3250;
+}
 
 #hannon{
     margin-top: 100px;
     position: relative
 }
-}
+
 .overlay {
     position: absolute; /* Position the overlay relative to the center-content */
     top: 0;
