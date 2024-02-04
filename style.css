@@ -1,5 +1,5 @@
 body{
-    background-color: #132043;
+    background-color: #000;
 }
 
 nav{
@@ -25,7 +25,7 @@ nav{
 }
   
 .side-content {
-    /* background-color: aqua; */
+    background-color: aqua;
     grid-column: 1;
 }
   
@@ -67,4 +67,27 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .button {
+    /* Basic button styles */
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 25px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    font-size: 1rem; /* Increase font size for largeness */
+    font-weight: bold; /* Add boldness */
+    border-radius: 10px;
+    background-color: #FF0000; /* Bright red */
+    color: #ffffff; /* White text for contrast */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  
+    /* Box shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  
+    /* Optional hover effect to change color or shadow */
+    &:hover {
+      background-color: #C00000; /* Darker red on hover */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    }
   }

@@ -16,12 +16,21 @@ glayds.innerHTML = `<h2>This person's work is the foundation of GPS</h2>`
 glayds.style.color = 'white'
 
 let jesse = document.getElementById('intro4')
-jesse.innerHTML = `<h2>This person holds the patent for the mobile data phone and the wireless base station</h2>`
+jesse.innerHTML = `<h2>This person holds the patent for the mobile data</br>
+ phone and the wireless base station</h2>`
 jesse.style.color = 'white'
 
 let hannon = document.getElementById('intro5')
 hannon.innerHTML = `<h2>This person invented the 3-D graphics chip </h2>`
 hannon.style.color = "white"
+
+let bMark = document.getElementById("mark1")
+let markDiv = document.getElementById('Mark');
+let overlayMark = markDiv.querySelector('.overlay');
+
+bMark.addEventListener("click", (e)=>{
+    overlayMark.remove();
+})
 
 
 
