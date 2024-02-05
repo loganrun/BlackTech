@@ -76,7 +76,7 @@ cMarion.addEventListener("click", (e) => {
     title.textContent = 'Dr. MARION CROAK';
     let info = document.getElementById('marion1');
     info = document.createElement('div');
-    info.innerHTML = `<p>Dr. Marion Croak invented Voice Over Iternet Protocal.</br> Dr. Croak has over 200 patents, half of which are in the VOIP technolgy.  </p>`;
+    info.innerHTML = `<p>Dr. Marion Croak invented Voice Over Iternet Protocal. Dr. Croak has over<br> 200 patents, half of which are in the VOIP technolgy. Croak was inducted<br> into the Mational Inventors Hall Of Fame, the National Academy of Engineers<br> and the American Academy of Arts and Sciences in 2022. She is the first <br>of two black women to be inducted to the NIHF, joining the ranks of 48<br> other female inductees and 30 other Black inductees  </p>`;
     title.style.color = 'black';
     title.classList.add('flex-ctr');
     info.style.color = 'black';
