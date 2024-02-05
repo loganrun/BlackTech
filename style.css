@@ -16,33 +16,28 @@ nav{
 
 .grid-container {
     display: grid;
-    /* grid-template-columns: 15% 70% 15%; Define the grid columns */
+    /* grid-template-columns: 15% 70% 15%; */
     grid-template-columns: 1fr 3fr 1fr;
-    /* grid-template-rows: 1fr; Ensure a single row */
+    /* grid-template-rows: 1fr
     /* height: 100vh;  */
     /* align-content: center; */
     /* align-items: center; */
 }
   
 .side-content {
-    background-color: aqua;
+    /* background-color: #343541; */
     grid-column: 1;
 }
   
 .center-content {
-    /* background-color:#343541; */
-    /* grid-column: 2;
-    background-color: #343541;
-    display: flex;
-    justify-content: center; 
-    color: "white"; */
-    padding: 20px; /* Add padding for content */
-    display: grid; /* Make center panel single column */
-    grid-template-rows: auto; /* Allow items to stack vertically */
-    align-items: center; /* Align content vertically (optional) */
+    background-color:#343541; 
+    padding: 20px; 
+    display: grid; 
+    grid-template-rows: auto; 
+    align-items: center; 
     justify-items: center;
-    background-color: #2D3250;
-}
+    /* background-color: #2D3250;*/
+} 
 
 #Mark{
     /* margin-top: 100px; */
@@ -55,14 +50,14 @@ nav{
 
 
 .overlay {
-    position: absolute; /* Position the overlay relative to the center-content */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 400px;
-    background-color: rgb(169,169,169, 0.9); /* Semi-transparent black background */
-    color: white; /* Optional: Set text color for better readability */
-    text-align: center; /* Optional: Center text within the overlay */
+    background-color: rgb(169,169,169, 0.9); 
+    color: white; 
+    text-align: center; 
   }
   .flex-ctr {
     display: flex;
@@ -70,25 +65,24 @@ nav{
     align-items: center;
   }
   .button {
-    /* Basic button styles */
-    display: inline-block; /* Makes it behave like a button */
-    padding: 10px 25px; /* Adjust padding as needed */
-    border: none; /* Remove default border */
-    font-size: 1rem; /* Increase font size for largeness */
-    font-weight: bold; /* Add boldness */
+    display: inline-block; 
+    padding: 10px 25px; 
+    border: none; 
+    font-size: 1rem; 
+    font-weight: bold; 
     border-radius: 10px;
-    background-color: #FF0000; /* Bright red */
-    color: #ffffff; /* White text for contrast */
+    background-color: #FF0000; 
+    color: #ffffff; 
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     margin-top: 15px;
     margin-bottom: 20px;
   
-    /* Box shadow for depth */
+    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   
-    /* Optional hover effect to change color or shadow */
+    
     &:hover {
-      background-color: #C00000; /* Darker red on hover */
+      background-color: #C00000; 
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
     }
-  }
+}

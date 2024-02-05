@@ -129,6 +129,41 @@ hmarc.addEventListener("click", (e)=>{
     e.preventDefault()
 })
 
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const suggestion = document.getElementById('suggestion').value;
+
+  if (name.trim() === "") {
+    alert("Name cannot be blank.");
+  } else {
+        const allowedChars = /^[a-zA-Z0-9]+$/;
+        if (!allowedChars.test(username)) {
+          alert("Username cannot contain special characters or whitespace.");
+        }
+      
+    }
+
+//check email
+  if (email.trim() === "") {
+    alert("Email address cannot be blank.");
+  } else {
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+    }
+  }
+
+  window.confirm(`Hi ${name}. Thanks for suggesting ${suggestion}`)
+
+
+
+  console.log(`Name: ${name}, Email: ${email}, Suggestion: ${suggestion}`);
+})
+
 
 
 
