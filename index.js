@@ -32,23 +32,40 @@ let but1 =document.getElementById('but1');
 bMark.addEventListener("click", (e)=>{
     overlayMark.remove();
     but1.remove();
-    
     let title = document.createElement('h1'); 
     title.textContent = 'Dr. MARK DEAN';
-    let paragraph = document.createElement('p');
-    //paragraph.textContent = 'Mark Dean is credited with helping develop</br> multiple major technologies, among them the Industry Standard Architecture system bus, the color PC monitor and the first gigahertz chip.';
-    let info = document.getElementById('mark1'); // Example target
+    let info = document.getElementById('mark1'); 
     info = document.createElement('div');
-// targetElement.appendChild(title);
-// targetElement.appendChild(paragraph);
     info.innerHTML=`<p>Mark Dean is credited with helping develop multiple major technologies,</br> among them the Industry Standard Architecture system bus, </br> the color PC monitor and the first gigahertz chip.</p>`;
-    //info.innerHTML
     title.style.color = 'white';
     title.classList.add('flex-ctr');
     info.style.color = 'white';
     info.classList.add('flex-ctr');
     bMark.appendChild(title);
     bMark.appendChild(info);
+    e.preventDefault()
+})
+
+let cMarion = document.getElementById("marion1");
+let marionDiv = document.getElementById('Marion');
+let overlayMarion = marionDiv.querySelector('.overlay');
+let but2 =document.getElementById('but2');
+
+cMarion.addEventListener("click", (e)=>{
+    overlayMarion.remove();
+    but2.remove();
+    let title = document.createElement('h1'); 
+    title.textContent = 'Dr. MARION CROAK';
+    let info = document.getElementById('marion1'); 
+    info = document.createElement('div');
+    info.innerHTML=`<p>Dr. Marion Croak invented Voice Over Iternet Protocal.</br> Dr. Croak has over 200 patents, half of which are in the VOIP technolgy.  </p>`;
+    title.style.color = 'white';
+    title.classList.add('flex-ctr');
+    info.style.color = 'white';
+    info.classList.add('flex-ctr');
+    cMarion.appendChild(title);
+    cMarion.appendChild(info);
+    e.preventDefault()
 })
 
 
