@@ -3,6 +3,39 @@ navBod.innerHTML = '<h1>Great African Americans in Tech</h1>'
 navBod.classList.add('flex-ctr')
 navBod.style.color = 'white'
 
+let navLinks = [
+    { text: 'About', href: '#' },  
+    {text: 'Other List',href: '#'},
+    {text: 'Join Us',href: '#'},
+  ];
+
+  for(let i of navLinks){
+    let link = document.createElement('a')
+    link.innerText = i.text;
+    link.href = i.href;
+    link.addEventListener('click', handleClick);
+    link.style.textDecoration = 'none';
+    link.style.color = 'white';
+    link.style.paddingRight = '10px';
+    link.style.margin = '10px';
+    link.style.marginLeft= '50px';
+    link.style.alignSelf= 'right';
+    navBod.appendChild(link);
+}
+
+function handleClick(e){
+
+    
+    let clickedLink = e.target
+    clickedLink.classList.add("active")
+    clickedLink.style.color = 'black';
+    e.preventDefault();
+    }
+
+
+
+
+
 let mark = document.getElementById('intro1')
 mark.innerHTML = '<h2>This person invented the Personal Computer</h2>'
 mark.style.color = 'black'
