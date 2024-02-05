@@ -131,37 +131,41 @@ hmarc.addEventListener("click", (e)=>{
 
 const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); 
+form.addEventListener('submit', (e) => {
+  
   const name = document.getElementById('name').value;
+  console.log(name);
   const email = document.getElementById('email').value;
+  console.log(email);
   const suggestion = document.getElementById('suggestion').value;
 
   if (name.trim() === "") {
     alert("Name cannot be blank.");
-  } else {
-        const allowedChars = /^[a-zA-Z0-9]+$/;
-        if (!allowedChars.test(username)) {
-          alert("Username cannot contain special characters or whitespace.");
-        }
-      
-    }
+    return
+   } 
+
 
 //check email
   if (email.trim() === "") {
     alert("Email address cannot be blank.");
+    return
   } else {
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
+      return
     }
   }
+//check suggestion
+  if (suggestion.trim() === "") {
+    alert("Suggestion cannot be blank.");
+    return
+  }
+
+  e.preventDefault(); 
 
   window.confirm(`Hi ${name}. Thanks for suggesting ${suggestion}`)
 
-
-
-  console.log(`Name: ${name}, Email: ${email}, Suggestion: ${suggestion}`);
 })
 
 
