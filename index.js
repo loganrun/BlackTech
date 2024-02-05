@@ -107,6 +107,28 @@ let hannon = document.getElementById('intro5')
 hannon.innerHTML = `<h2>This person invented the 3-D graphics chip </h2>`
 hannon.style.color = "white"
 
+let hmarc = document.getElementById("hannon1");
+let marcDiv = document.getElementById('hannon');
+let overlayMarc = marcDiv.querySelector('.overlay');
+let but5 =document.getElementById('but5');
+
+hmarc.addEventListener("click", (e)=>{
+    overlayMarc.remove();
+    but5.remove();
+    let title = document.createElement('h1'); 
+    title.textContent = 'Dr. Marc Hannon';
+    let info = document.getElementById('hannon1'); 
+    info = document.createElement('div');
+    info.innerHTML=`<p>In 1982, Hannah co-founded Silicon Graphics, Inc. (SGI) with Jim Clark </br>and five others. Dr. Hannon headed the team that created the Geometry </br>Engine, a precursor to the modern day graphics card. Marc and his team</br> made the first 3-D graphic chip to be used in a video game console - </br>the Nintendo 64. Software written by Dr. Hannon was also used to produce</br> the graphics in movies such as jurassic Park and Terminator2.</p>`;
+    title.style.color = 'white';
+    title.classList.add('flex-ctr');
+    info.style.color = 'white';
+    info.classList.add('flex-ctr');
+    hmarc.appendChild(title);
+    hmarc.appendChild(info);
+    e.preventDefault()
+})
+
 
 
 
